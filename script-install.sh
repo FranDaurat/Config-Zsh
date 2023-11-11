@@ -8,5 +8,6 @@ sudo cp p10k.zsh ~/.p10k.zsh
 sudo cp zshrc.pre-oh-my-zsh ~/.zshrc.pre-oh-my-zsh
 sudo cp kitty.conf ~/.config/kitty/kitty.conf
 sudo cp oh-my-zsh.sh ~/.oh-my-zsh/oh-my-zsh.sh
+source .p10k.zsh
 source .zshrc
 echo "Instalacion terminada"
