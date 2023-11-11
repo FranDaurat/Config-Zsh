@@ -7,5 +7,6 @@ sudo mv zshrc ~/.zshrc
 sudo mv p10k.zsh ~/.p10k.zsh
 sudo mv zshrc.pre-oh-my-zsh ~/.zshrc.pre-oh-my-zsh
 sudo mv kitty.conf ~/.config/kitty/kitty.conf
+sudo mv oh-my-zsh.sh ~/.oh-my-zsh/oh-my-zsh.sh
 source .zshrc
 echo "Instalacion Terminada"
