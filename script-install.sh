@@ -6,7 +6,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo rm ~/.zshrc
 sudo rm ~/.p10k.zsh
 sudo rm  ~/.config/kitty/kitty.conf
-sudo cp zshrc ~/.zshrc
+sudo cp zshrc ~/.zshrca
 sudo cp p10k.zsh ~/.p10k.zsh
 sudo cp kitty.conf ~/.config/kitty/kitty.conf
 source .p10k.zsh
