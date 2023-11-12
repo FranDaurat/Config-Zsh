@@ -5,10 +5,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 sudo rm ~/.zshrc
 sudo rm ~/.p10k.zsh
-sudo rm  ~/.config/kitty/kitty.conf
-sudo cp zshrc ~/.zshrc
-sudo cp p10k.zsh ~/.p10k.zsh
-sudo cp kitty.conf ~/.config/kitty/kitty.conf
-source .p10k.zsh
-source .zshrc
+sudo rm ~/.config/kitty/kitty.conf
+sudo cp ~/Config-Zsh/zshrc ~/.zshrc
+sudo cp ~/Config-Zsh/p10k.zsh ~/.p10k.zsh
+sudo cp ~/Config-Zsh/kitty.conf ~/.config/kitty/kitty.conf
+source ~/.p10k.zsh
+source ~/.zshrc
 echo "Instalacion terminada"
