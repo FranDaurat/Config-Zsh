@@ -1,14 +1,26 @@
+#!/bin/bash
+
+# Asegúra tener las dependencias instaladas
 sudo apt update -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-sudo rm ~/.zshrc
-sudo rm ~/.p10k.zsh
-sudo rm ~/.config/kitty/kitty.conf
-sudo cp ~/Config-Zsh/zshrc ~/.zshrc
-sudo cp ~/Config-Zsh/p10k.zsh ~/.p10k.zsh
-sudo cp ~/Config-Zsh/kitty.conf ~/.config/kitty/kitty.conf
-source ~/.p10k.zsh
+sudo apt install -y git curl kitty
+
+# Instala oh-my-zsh y plugins
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+# Copia y borrado de archivos de configuración
+rm ~/.zshrc
+rm ~/.p10k.zsh
+rm ~/.config/kitty/kitty.conf
+cp ~/Config-Zsh/zshrc ~/.zshrc
+cp ~/Config-Zsh/p10k.zsh ~/.p10k.zsh
+cp ~/Config-Zsh/kitty.conf ~/.config/kitty/kitty.conf
+
+# Fuente de los archivos de configuración
 source ~/.zshrc
-echo "Instalacion terminada"
+source ~/.p10k.zsh
+
+echo "Instalación terminada"
+
