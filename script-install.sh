@@ -22,5 +22,5 @@ cp ~/Config-Zsh/kitty.conf ~/.config/kitty/kitty.conf
 source ~/.zshrc
 source ~/.p10k.zsh
 
-echo "Instalación terminada"
+echo "\n\n[+] Instalación terminada\n"
 
