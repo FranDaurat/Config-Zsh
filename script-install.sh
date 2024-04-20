@@ -11,12 +11,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copia y borrado de archivos de configuración
-rm ~/.zshrc
-rm ~/.p10k.zsh
-rm ~/.config/kitty/kitty.conf
-cp ~/Config-Zsh/zshrc ~/.zshrc
-cp ~/Config-Zsh/p10k.zsh ~/.p10k.zsh
-cp ~/Config-Zsh/kitty.conf ~/.config/kitty/kitty.conf
+cp zshrc ~/.zshrc
+cp p10k.zsh ~/.p10k.zsh
+cp kitty.conf ~/.config/kitty/kitty.conf
 
 # Fuente de los archivos de configuración
 source ~/.zshrc

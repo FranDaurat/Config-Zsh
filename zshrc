@@ -112,5 +112,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cat="batcat"
+
+function mkt (){
+  mkdir -p nmap content exploits
+}
+
+function extractPorts(){
+    ports="$(cat $1 | grep -oP '\d{1,5}/open' | awk '{print $1}' FS='/' | xargs | tr ' ' ',')"
+    ip_address="$(cat $1 | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u | head -n 1)"
+    echo -e "\n[*] Extracting information...\n" > extractPorts.tmp
+    echo -e "\t[*] IP Address: $ip_address"  >> extractPorts.tmp
+    echo -e "\t[*] Open ports: $ports\n"  >> extractPorts.tmp
+    echo $ports | tr -d '\n' | xclip -sel clip
+    echo -e "[*] Ports copied to clipboard\n"  >> extractPorts.tmp
+    cat extractPorts.tmp; rm extractPorts.tmp
+}
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
