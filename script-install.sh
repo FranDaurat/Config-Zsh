@@ -2,7 +2,7 @@
 
 # Asegúra tener las dependencias instaladas
 sudo apt update -y
-sudo apt install -y git curl kitty bat xclip
+sudo apt install -y git curl kitty bat xclip httpx-toolkit
 # Instala oh-my-zsh y plugins
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
