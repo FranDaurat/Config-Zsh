@@ -1,0 +1,7 @@
+2024-05-15 10:05:53.885 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/elgordoponcio/.config/polybar/current.ini","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-05-15 10:05:54.307 [info] Started local extension host with pid 32550.
+2024-05-15 10:05:54.374 [error] Extension 'ms-python.debugpy' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): portsAttributes, contribIssueReporter, debugVisualization
+product.json (WINS): portsAttributes, contribIssueReporter
+2024-05-15 10:05:57.080 [info] [perf] Render performance baseline is 28ms
+2024-05-15 10:05:57.337 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.

@@ -1,0 +1,42 @@
+{
+    "bookmarks": [],
+    "gui_state": {
+        "startupdialog": {
+            "geometry": "AdnQywADAAAAAAHgAAABDgAABZ8AAAMpAAAB4AAAAQ4AAAWfAAADKQAAAAAAAAAAB4AAAAHgAAABDgAABZ8AAAMp",
+            "width": 960,
+            "height": 540,
+            "x": 480,
+            "y": 270
+        },
+        "messagebox": {
+            "width": 720,
+            "height": 167,
+            "x": 600,
+            "y": 456
+        },
+        "mainview": {
+            "geometry": "AdnQywADAAAAAAAMAAAAQwAAB3MAAAQrAAAADAAAAEMAAAdzAAAEKwAAAAAAAAAAB4AAAAAMAAAAQwAAB3MAAAQr",
+            "width": 1896,
+            "height": 1001,
+            "x": 12,
+            "y": 67,
+            "lock_layout": false,
+            "windowstate": "AAAA/wAAAAL9AAAAAgAAAAIAAAdoAAAB5/wBAAAAA/sAAAAMAFMAdABhAHQAdQBzAQAAAAAAAAElAAAAdQAAIAD7AAAADABDAG8AbQBtAGkAdAEAAAEoAAADIAAAAJ4A/////AAABEsAAAMdAAAAxQD////6AAAAAAEAAAAE+wAAABAAQgByAGEAbgBjAGgAZQBzAQAAAAD/////AAAAnAD////7AAAAFABTAHUAYgBtAG8AZAB1AGwAZQBzAQAAAAD/////AAAAxQD////7AAAAEgBGAGEAdgBvAHIAaQB0AGUAcwAAAAAA/////wAAAMMA////+wAAAAwAUgBlAGMAZQBuAHQAAAAAAP////8AAACfAP///wAAAAMAAAdoAAAB5/wBAAAAAvsAAAAIAEQAaQBmAGYBAAAAAAAAB2gAAADCAP////wAAAAA/////wAAAAAA////+v////8BAAAAAvsAAAAOAEEAYwB0AGkAbwBuAHMAAAAAAP////8AAABmAP////sAAAAOAEMAbwBuAHMAbwBsAGUAAAAAAP////8AAABqAP///wAAAwYAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA",
+            "show_status_filter": false,
+            "toolbars": [],
+            "ref_sort": 0,
+            "show_diff_line_numbers": true,
+            "show_diff_filenames": false,
+            "image_diff_mode": 0,
+            "image_zoom_mode": 0,
+            "word_wrap": true
+        }
+    },
+    "recent": [
+        {
+            "name": "0a0e00d3038ae38e80530d7700520080.web-security-academy.net",
+            "path": "/home/elgordoponcio/0a0e00d3038ae38e80530d7700520080.web-security-academy.net"
+        }
+    ],
+    "copy_formats": []
+}

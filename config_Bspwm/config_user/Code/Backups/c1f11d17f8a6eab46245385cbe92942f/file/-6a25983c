@@ -1,0 +1,11 @@
+file:///home/elgordoponcio/.config/bspwm/scripts/victim_to_hack.sh {"mtime":1715777320775,"ctime":1715777250887,"size":349,"etag":"3cderp0l4b8","orphaned":false,"typeId":""}
+#!/bin/bash
+ 
+ip_address=$(/bin/cat /home/elgordoponcio/.config/bin/target | awk '{print $1}')
+machine_name=$(/bin/cat /home/elgordoponcio/.config/bin/target | awk '{print $2}')
+ 
+if [ $ip_address ] && [ $machine_name ]; then
+    echo "%{F#e51d0b}ICONO %{F#ffffff}$ip_address%{u-} - $machine_name"
+else
+    echo "%{F#e51d0b}ICONO %{u-}%{F#ffffff} No target"
+fi

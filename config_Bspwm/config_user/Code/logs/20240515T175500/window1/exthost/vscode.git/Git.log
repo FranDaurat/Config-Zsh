@@ -1,0 +1,95 @@
+2024-05-15 17:55:06.118 [info] Log level: Info
+2024-05-15 17:55:06.118 [info] Validating found git in: "git"
+2024-05-15 17:55:06.118 [info] Using git "2.43.0" from "git"
+2024-05-15 17:55:06.118 [info] > git rev-parse --show-toplevel [6ms]
+2024-05-15 17:55:06.118 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.118 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.118 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.120 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-15 17:55:06.120 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.127 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-15 17:55:06.127 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.148 [info] > git rev-parse --show-toplevel [17ms]
+2024-05-15 17:55:06.148 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.154 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-15 17:55:06.154 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.160 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-15 17:55:06.160 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.166 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.171 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-15 17:55:06.180 [info] Open repository: /home/elgordoponcio/.fzf
+2024-05-15 17:55:06.195 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-15 17:55:06.195 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.196 [info] > git config --get commit.template [10ms]
+2024-05-15 17:55:06.221 [info] > git rev-parse --show-toplevel [10ms]
+2024-05-15 17:55:06.221 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.226 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.226 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.230 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2024-05-15 17:55:06.234 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.fzf/.git/refs/remotes/origin/master'
+2024-05-15 17:55:06.237 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-05-15 17:55:06.241 [info] > git rev-parse --show-toplevel [11ms]
+2024-05-15 17:55:06.248 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-15 17:55:06.253 [info] Open repository: /home/elgordoponcio/.oh-my-zsh
+2024-05-15 17:55:06.262 [info] > git status -z -uall [21ms]
+2024-05-15 17:55:06.282 [info] > git merge-base refs/heads/master refs/remotes/origin/master [13ms]
+2024-05-15 17:55:06.285 [info] > git rev-parse --show-toplevel [24ms]
+2024-05-15 17:55:06.285 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.285 [info] > git config --get commit.template [27ms]
+2024-05-15 17:55:06.292 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [7ms]
+2024-05-15 17:55:06.297 [info] > git config --get commit.template [16ms]
+2024-05-15 17:55:06.304 [info] > git diff --name-status -z --diff-filter=ADMR 0994d9c881f8380997b96bb0a4a7416b50bc2b0d...refs/remotes/origin/master [7ms]
+2024-05-15 17:55:06.305 [info] > git rev-parse --show-toplevel [13ms]
+2024-05-15 17:55:06.305 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.315 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.315 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.316 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2024-05-15 17:55:06.324 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.fzf/.git/refs/remotes/origin/master'
+2024-05-15 17:55:06.324 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2024-05-15 17:55:06.345 [info] > git rev-parse refs/remotes/origin/master [21ms]
+2024-05-15 17:55:06.351 [info] > git rev-parse --show-toplevel [30ms]
+2024-05-15 17:55:06.351 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.363 [info] > git status -z -uall [12ms]
+2024-05-15 17:55:06.372 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-15 17:55:06.372 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.385 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-15 17:55:06.385 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.394 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.394 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.399 [info] > git rev-parse --show-toplevel [0ms]
+2024-05-15 17:55:06.399 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.404 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.404 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.410 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.410 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.419 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-15 17:55:06.433 [info] > git rev-parse --git-dir --git-common-dir [10ms]
+2024-05-15 17:55:06.439 [info] Open repository: /home/elgordoponcio/powerlevel10k
+2024-05-15 17:55:06.452 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.452 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.457 [info] > git config --get commit.template [14ms]
+2024-05-15 17:55:06.469 [info] > git rev-parse --show-toplevel [8ms]
+2024-05-15 17:55:06.469 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.476 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.476 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.477 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-05-15 17:55:06.481 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/powerlevel10k/.git/refs/remotes/origin/master'
+2024-05-15 17:55:06.482 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-05-15 17:55:06.536 [info] > git status -z -uall [49ms]
+2024-05-15 17:55:06.549 [info] > git merge-base refs/heads/master refs/remotes/origin/master [8ms]
+2024-05-15 17:55:06.553 [info] > git config --get commit.template [5ms]
+2024-05-15 17:55:06.556 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [2ms]
+2024-05-15 17:55:06.565 [info] > git diff --name-status -z --diff-filter=ADMR 16e58484262de745723ed114e09217094655eaaa...refs/remotes/origin/master [6ms]
+2024-05-15 17:55:06.565 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-05-15 17:55:06.568 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/powerlevel10k/.git/refs/remotes/origin/master'
+2024-05-15 17:55:06.570 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2024-05-15 17:55:06.585 [info] > git status -z -uall [12ms]
+2024-05-15 17:55:06.640 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-15 17:55:06.640 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-15 17:55:06.790 [info] > git status -z -uall [414ms]
+2024-05-15 17:55:06.800 [info] > git merge-base refs/heads/master refs/remotes/origin/master [6ms]
+2024-05-15 17:55:06.806 [info] > git config --get commit.template [6ms]
+2024-05-15 17:55:06.809 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [4ms]
+2024-05-15 17:55:06.815 [info] > git diff --name-status -z --diff-filter=ADMR 1b5503a3eefeb3e248bbc07a2f4e4b7591924307...refs/remotes/origin/master [0ms]
+2024-05-15 17:55:06.816 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2024-05-15 17:55:06.852 [info] > git status -z -uall [33ms]

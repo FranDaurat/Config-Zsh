@@ -1,0 +1,37 @@
+2024-05-27 18:22:09.233 [info] Log level: Info
+2024-05-27 18:22:09.233 [info] Validating found git in: "git"
+2024-05-27 18:22:09.233 [info] Using git "2.43.0" from "git"
+2024-05-27 18:22:09.233 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-27 18:22:09.233 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-05-27 18:22:09.233 [info] Open repository: /home/elgordoponcio/payloads
+2024-05-27 18:22:09.233 [info] > git config --get commit.template [2ms]
+2024-05-27 18:22:09.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2024-05-27 18:22:09.278 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-27 18:22:09.284 [info] > git rev-parse refs/remotes/origin/master [6ms]
+2024-05-27 18:22:09.554 [info] > git status -z -uall [235ms]
+2024-05-27 18:22:09.597 [info] > git merge-base refs/heads/master refs/remotes/origin/master [36ms]
+2024-05-27 18:22:09.622 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [5ms]
+2024-05-27 18:22:09.629 [info] > git config --get commit.template [33ms]
+2024-05-27 18:22:09.651 [info] > git diff --name-status -z --diff-filter=ADMR e15d0c7482fe9343f920a3d0d6c989b1a1a39f90...refs/remotes/origin/master [22ms]
+2024-05-27 18:22:09.665 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-05-27 18:22:09.672 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-27 18:22:09.673 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2024-05-27 18:22:09.836 [info] > git status -z -uall [154ms]
+2024-05-27 18:22:10.097 [info] > git check-ignore -v -z --stdin [3ms]
+2024-05-27 18:22:10.973 [info] > git show --textconv :CSRF_ws.js [8ms]
+2024-05-27 18:22:10.974 [info] > git ls-files --stage -- /home/elgordoponcio/payloads/CSRF_ws.js [3ms]
+2024-05-27 18:22:24.410 [info] > git config --get commit.template [4ms]
+2024-05-27 18:22:24.411 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-05-27 18:22:24.413 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-27 18:22:24.414 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-05-27 18:22:24.551 [info] > git status -z -uall [134ms]
+2024-05-27 18:22:29.561 [info] > git config --get commit.template [3ms]
+2024-05-27 18:22:29.562 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-05-27 18:22:29.565 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-27 18:22:29.566 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-05-27 18:22:29.701 [info] > git status -z -uall [132ms]
+2024-05-27 18:22:34.714 [info] > git config --get commit.template [4ms]
+2024-05-27 18:22:34.715 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-05-27 18:22:34.718 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-27 18:22:34.719 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-05-27 18:22:34.861 [info] > git status -z -uall [139ms]

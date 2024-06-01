@@ -1,0 +1,34 @@
+2024-05-16 10:32:00.558 [info] Log level: Info
+2024-05-16 10:32:00.558 [info] Validating found git in: "git"
+2024-05-16 10:32:00.558 [info] Using git "2.43.0" from "git"
+2024-05-16 10:32:00.558 [info] > git rev-parse --show-toplevel [11ms]
+2024-05-16 10:32:00.558 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-05-16 10:32:00.558 [info] Open repository: /home/elgordoponcio/.config/nvim
+2024-05-16 10:32:00.560 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-16 10:32:00.562 [info] > git config --get commit.template [8ms]
+2024-05-16 10:32:00.595 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [27ms]
+2024-05-16 10:32:00.601 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.config/nvim/.git/refs/remotes/origin/main'
+2024-05-16 10:32:00.602 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-05-16 10:32:00.608 [info] > git status -z -uall [2ms]
+2024-05-16 10:32:00.626 [info] > git merge-base refs/heads/main refs/remotes/origin/main [13ms]
+2024-05-16 10:32:00.641 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [11ms]
+2024-05-16 10:32:00.645 [info] > git config --get commit.template [18ms]
+2024-05-16 10:32:00.660 [info] > git diff --name-status -z --diff-filter=ADMR aad624221adc6ed4e14337b3b3f2b74136696b53...refs/remotes/origin/main [16ms]
+2024-05-16 10:32:00.667 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-05-16 10:32:00.670 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.config/nvim/.git/refs/remotes/origin/main'
+2024-05-16 10:32:00.671 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-05-16 10:32:00.676 [info] > git status -z -uall [2ms]
+2024-05-16 10:32:01.045 [info] > git show --textconv :init.lua [4ms]
+2024-05-16 10:32:01.046 [info] > git ls-files --stage -- /home/elgordoponcio/.config/nvim/init.lua [2ms]
+2024-05-16 10:32:01.051 [info] > git cat-file -s 1152335b13259c92b83fdd20669ec76200e56d3b [1ms]
+2024-05-16 10:32:01.126 [info] > git check-ignore -v -z --stdin [1ms]
+2024-05-16 10:33:12.283 [info] > git config --get commit.template [3ms]
+2024-05-16 10:33:12.283 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-05-16 10:33:12.286 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.config/nvim/.git/refs/remotes/origin/main'
+2024-05-16 10:33:12.287 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-05-16 10:33:12.291 [info] > git status -z -uall [2ms]
+2024-05-16 10:33:18.437 [info] > git config --get commit.template [1ms]
+2024-05-16 10:33:18.441 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-05-16 10:33:18.444 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/.config/nvim/.git/refs/remotes/origin/main'
+2024-05-16 10:33:18.445 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-05-16 10:33:18.450 [info] > git status -z -uall [2ms]

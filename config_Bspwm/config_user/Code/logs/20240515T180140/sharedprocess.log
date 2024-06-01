@@ -1,0 +1,30 @@
+2024-05-15 18:01:41.955 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:41.960 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.028 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.109 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.282 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.308 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.309 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.480 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.600 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.711 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.890 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:42.953 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:43.091 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:43.192 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:43.294 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:44.095 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:44.193 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:44.206 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:01:44.878 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:02:12.480 [info] Getting Manifest... ms-python.python
+2024-05-15 18:02:12.486 [info] Installing extension: ms-python.python
+2024-05-15 18:02:12.767 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.
+2024-05-15 18:02:12.780 [info] Extension installed successfully: ms-python.python
+2024-05-15 18:02:12.852 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/elgordoponcio/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/elgordoponcio/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)

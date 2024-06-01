@@ -1,0 +1,8 @@
+2024-05-15 10:05:39.078 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/elgordoponcio/.config/bspwm/scripts/current.ini","scheme":"file"},"type":1,"exists":false}],"filesToDiff":[],"filesToMerge":[]}
+2024-05-15 10:05:39.369 [info] Started local extension host with pid 32235.
+2024-05-15 10:05:39.482 [error] Extension 'ms-python.debugpy' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): portsAttributes, contribIssueReporter, debugVisualization
+product.json (WINS): portsAttributes, contribIssueReporter
+2024-05-15 10:05:40.687 [error] [text file model] handleSaveError(0) - exit - resulted in a save error: Error: Unable to write file '/home/elgordoponcio/.config/bspwm/scripts/victim_to_hack.sh' (Error: File Modified Since) file:///home/elgordoponcio/.config/bspwm/scripts/victim_to_hack.sh
+2024-05-15 10:05:42.266 [info] [perf] Render performance baseline is 42ms
+2024-05-15 10:05:42.573 [error] [/home/elgordoponcio/.vscode/extensions/ms-python.python-2024.6.0]: Extension is not compatible with Code 1.88.1. Extension requires: ^1.89.0-20240415.

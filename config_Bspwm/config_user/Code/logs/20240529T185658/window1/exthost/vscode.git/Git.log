@@ -1,0 +1,11 @@
+2024-05-29 18:57:04.113 [info] Log level: Info
+2024-05-29 18:57:04.113 [info] Validating found git in: "git"
+2024-05-29 18:57:04.113 [info] Using git "2.43.0" from "git"
+2024-05-29 18:57:04.113 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-29 18:57:04.114 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-05-29 18:57:04.122 [info] Open repository: /home/elgordoponcio/payloads
+2024-05-29 18:57:04.147 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-29 18:57:04.150 [info] > git config --get commit.template [18ms]
+2024-05-29 18:57:04.221 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [64ms]
+2024-05-29 18:57:04.248 [warning] ENOENT: no such file or directory, open '/home/elgordoponcio/payloads/.git/refs/remotes/origin/master'
+2024-05-29 18:57:04.249 [info] > git rev-parse refs/remotes/origin/master [1ms]
