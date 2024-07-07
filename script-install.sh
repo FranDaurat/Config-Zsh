@@ -40,22 +40,22 @@ cp zshrc /home/elgordoponcio/.zshrc
 sudo cp zshrc /root/.zshrc
 cp -r oh-my-zsh /home/elgordoponcio/.oh-my-zsh
 sudo cp -r oh-my-zsh_root /root/.oh-my-zsh
-
+sudo ln -s -f /home/elgordoponcio/.zshrc /root/.zshrc
 ## p10k
 cp p10k.zsh /home/elgordoponcio/.p10k.zsh
 sudo cp p10k.zsh_root /root/.p10k.zsh
+cp -r powerlevel10k /home/elgordoponcio/powerlevel10k
+sudo cp -r powerlevel10k_root /root/powerlevel10k
+
+## .config
+cp -r config_Bspwm/config_user/ /home/elgordoponcio/.config
+sudo cp -r config_Bspwm/config_root/ /root/.config
 
 ## kitty
-cp color.ini /home/elgordoponcio/.config/kitty/color.ini
-cp kitty.conf /home/elgordoponcio/.config/kitty/kitty.conf
-sudo cp color.ini /root/.config/kitty/color.ini
-sudo cp kitty.conf /root/.config/kitty/kitty.conf
-
-## bspwm
-
-## sxhkd
-
-##
+#cp color.ini /home/elgordoponcio/.config/kitty/color.ini
+#cp kitty.conf /home/elgordoponcio/.config/kitty/kitty.conf
+#sudo cp color.ini /root/.config/kitty/color.ini
+#sudo cp kitty.conf /root/.config/kitty/kitty.conf
 
 # Fuente de los archivos de configuración
 source /home/elgordoponcio/.zshrc
@@ -63,5 +63,5 @@ source /home/elgordoponcio/.p10k.zsh
 sudo source /root/.zshrc
 sudo source /root/.p10k.zsh
 
-echo "\n\n${greenColour}[*] Instalación terminada${endColour}\n"
+echo "\n\n${greenColour}[*] Instalación terminada, solo falta instalar el BurpsuitPro y reiniciar...${endColour}\n"
 
