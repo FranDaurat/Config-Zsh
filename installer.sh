@@ -29,7 +29,7 @@ ROOT_HOME="/root"
 install_packages() {
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
   sudo apt update -y
-  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom 
+  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom wmname feh
   sudo apt install -y build-essential vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
   sudo apt install -y libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
   sudo apt install -y libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev
@@ -153,14 +153,17 @@ picom_install() {
   ninja -C build
   ninja -C build install
 }
-libcairo2-dev
-libglib2.0-dev
-sudo apt install libpango1.0-dev
-sudo apt install libxkbcommon-dev
-sudo apt install libgdk-pixbuf2.0-dev
-sudo apt install libxcb-xkb-dev
-sudo apt install libxkbcommon-x11-dev
-sudo apt install libxcb-cursor-dev
+
+rofi_install(){
+  sudo cp rofi /usr/bin/rofi
+  if [ ! -d "/usr/local/rofi" ];then
+    mkdir /usr/local/rofi
+    mkdir /usr/local/rofi/themes
+    sudo cp -r rofi_themes/* /usr/local/rofi/themes/
+  else
+    sudo cp -r rofi_themes/* /usr/local/rofi/themes/
+  fi
+}
 
 # Función para crear enlaces simbólicos
 create_symlink() {
@@ -172,6 +175,7 @@ install_packages
 install_oh_my_zsh
 copy_config_files
 picom_install 
+rofi_install
 create_symlink
 
 echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
