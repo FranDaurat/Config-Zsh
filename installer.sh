@@ -119,17 +119,30 @@ copy_config_files() {
     mkdir ${ROOT_HOME}/.config
     sudo cp -r config_Bspwm/config_root/* ${ROOT_HOME}/.config/
   fi
+
+  # Fonts
+  if [ -d "/usr/local/share/fonts" ]; then
+    rm -rf /usr/local/share/fonts/*
+    cp -r fonts/* /usr/local/share/fonts/ 
+  else
+    sudo mkdir /usr/local/share/fonts 
+    cp -r fonts/* /usr/local/share/fonts/ 
+  fi
+
+  # Wallpaper
+  if [ -d "${USER_HOME}/Wallpapers" ]; then
+    cp fondo.jpg ${USER_HOME}/Wallpapers/pexels-rpnickson-2478248.jpg
+  else
+    mkdir ${USER_HOME}/Wallpapers
+    cp fondo.jpg ${USER_HOME}/Wallpapers/pexels-rpnickson-2478248.jpg
+  fi
+
 }
 
 # Función para crear enlaces simbólicos
-#create_symlinks() {
-#  echo -e "${blueColour}[*] Creando enlaces simbólicos...${endColour}"
-#  ln -s ${USER_HOME}/.oh-my-zsh ${USER_HOME}/.oh-my-zsh/oh-my-zsh.sh
-#  sudo ln -s ${ROOT_HOME}/.oh-my-zsh ${ROOT_HOME}/.oh-my-zsh/oh-my-zsh.sh#
-#
-#  ln -s ${USER_HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme ${USER_HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh
-#  sudo ln -s ${ROOT_HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme ${ROOT_HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh
-#}
+create_symlink() {
+  ln -s -f ${USER_HOME}.zshrc ${ROOT_HOME}/.zshrc
+}
 
 # Llamada a funciones
 install_packages
