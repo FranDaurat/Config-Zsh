@@ -29,7 +29,7 @@ ROOT_HOME="/root"
 install_packages() {
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
   sudo apt update -y
-  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh 
+  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom rofi
   sudo apt install -y build-essential vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
   sudo apt install -y  libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 }
