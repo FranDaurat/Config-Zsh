@@ -106,21 +106,9 @@ copy_config_files() {
   fi
 
   # oh-my-zsh
-  if [ -d "${USER_HOME}/.oh-my-zsh" ]; then
-    rm -rf ${USER_HOME}/.oh-my-zsh/*
     cp -r oh-my-zsh/* ${USER_HOME}/.oh-my-zsh/
-  else
-    mkdir ${USER_HOME}/.oh-my-zsh
-    cp -r oh-my-zsh/* ${USER_HOME}/.oh-my-zsh/
-  fi
   ## Root
-  if [ -d "${ROOT_HOME}/.oh-my-zsh" ]; then
-    rm -rf ${ROOT_HOME}/.oh-my-zsh/*
-    cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
-  else
-    sudo mkdir ${ROOT_HOME}/.oh-my-zsh
-    cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
-  fi
+    sudo cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
   
   # .config
   if [ -d "${USER_HOME}/.config" ]; then
