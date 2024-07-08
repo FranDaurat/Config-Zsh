@@ -153,6 +153,14 @@ picom_install() {
   ninja -C build
   ninja -C build install
 }
+libcairo2-dev
+libglib2.0-dev
+sudo apt install libpango1.0-dev
+sudo apt install libxkbcommon-dev
+sudo apt install libgdk-pixbuf2.0-dev
+sudo apt install libxcb-xkb-dev
+sudo apt install libxkbcommon-x11-dev
+sudo apt install libxcb-cursor-dev
 
 # Función para crear enlaces simbólicos
 create_symlink() {
