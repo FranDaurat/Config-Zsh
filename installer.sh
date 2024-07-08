@@ -50,20 +50,22 @@ install_oh_my_zsh() {
 copy_config_files() {
   echo -e "${blueColour}[*] Copiando archivos de configuración...${endColour}"
   
-  # Zsh
+  # oh-my-Zsh
   cp zshrc ${USER_HOME}/.zshrc
   sudo cp zshrc ${ROOT_HOME}/.zshrc
+  cp -r oh-my-zsh/* ${USER_HOME}/.oh-my-zsh/
+  sudo cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
   
   # Powerlevel10k
   cp p10k.zsh ${USER_HOME}/.p10k.zsh
   sudo cp p10k.zsh_root ${ROOT_HOME}/.p10k.zsh
-  cp -r powerlevel10k ${USER_HOME}/powerlevel10k
-  sudo cp -r powerlevel10k_root ${ROOT_HOME}/powerlevel10k	
+  cp -r powerlevel10k/* ${USER_HOME}/powerlevel10k
+  sudo cp -r powerlevel10k_root/* ${ROOT_HOME}/powerlevel10k	
   
   # .config
   cp -r config_Bspwm/config_user/* ${USER_HOME}/.config
   sudo cp -r config_Bspwm/config_root/* ${ROOT_HOME}/.config
-  cp -r fonts /usr/local/share/fonts 
+  cp -r fonts/* /usr/local/share/fonts 
   cp fondo.jpg ${USER_HOME}/Wallpapers/pexels-rpnickson-2478248.jpg
 }
 
