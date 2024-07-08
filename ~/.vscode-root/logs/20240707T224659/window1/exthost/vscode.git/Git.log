@@ -1,0 +1,68 @@
+2024-07-07 22:47:04.283 [info] Log level: Info
+2024-07-07 22:47:04.283 [info] Validating found git in: "git"
+2024-07-07 22:47:04.283 [info] Using git "2.43.0" from "git"
+2024-07-07 22:47:04.283 [info] > git rev-parse --show-toplevel [7ms]
+2024-07-07 22:47:04.283 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.284 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:04.284 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.289 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:04.289 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.295 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-07 22:47:04.295 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.300 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-07 22:47:04.300 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.304 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:04.304 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.308 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:04.308 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:04.312 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:04.312 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:05.217 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-07 22:47:05.217 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:31.919 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:31.919 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:47:32.972 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:47:32.972 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:48:46.349 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:48:46.349 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
+2024-07-07 22:48:56.627 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-07 22:48:56.627 [info] fatal: detected dubious ownership in repository at '/home/elgordoponcio/Downloads/Config-Zsh'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/elgordoponcio/Downloads/Config-Zsh
