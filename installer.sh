@@ -82,9 +82,9 @@ copy_config_files() {
   ## Root
   if [ -f "${ROOT_HOME}/.p10k.zsh" ]; then
     rm -rf ${ROOT_HOME}/.p10k.zsh
-    sudo cp .p10k.zsh_root ${ROOT_HOME}/.p10k.zsh
+    sudo cp p10k.zsh_root ${ROOT_HOME}/.p10k.zsh
   else
-    sudo cp .p10k.zsh_root ${ROOT_HOME}/.p10k.zsh
+    sudo cp p10k.zsh_root ${ROOT_HOME}/.p10k.zsh
   fi
 
   # powerlevel10k
@@ -164,7 +164,7 @@ install_packages
 install_oh_my_zsh
 copy_config_files
 picom_install 
-create_symlinks
+create_symlink
 
 echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
 tput cnorm
