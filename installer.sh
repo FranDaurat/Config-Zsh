@@ -29,9 +29,11 @@ ROOT_HOME="/root"
 install_packages() {
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
   sudo apt update -y
-  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom rofi
+  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom 
   sudo apt install -y build-essential vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
-  sudo apt install -y  libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+  sudo apt install -y libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+  sudo apt install -y libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev
+# Por ahora saque el rofi ya que revienta todo 
 }
 
 # Función para instalar oh-my-zsh y plugins
@@ -103,6 +105,23 @@ copy_config_files() {
     sudo cp -r powerlevel10k_root/* ${ROOT_HOME}/powerlevel10k/
   fi
 
+  # oh-my-zsh
+  if [ -d "${USER_HOME}/.oh-my-zsh" ]; then
+    rm -rf ${USER_HOME}/.oh-my-zsh/*
+    cp -r oh-my-zsh/* ${USER_HOME}/.oh-my-zsh/
+  else
+    mkdir ${USER_HOME}/.oh-my-zsh
+    cp -r oh-my-zsh/* ${USER_HOME}/.oh-my-zsh/
+  fi
+  ## Root
+  if [ -d "${ROOT_HOME}/.oh-my-zsh" ]; then
+    rm -rf ${ROOT_HOME}/.oh-my-zsh/*
+    cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
+  else
+    sudo mkdir ${ROOT_HOME}/.oh-my-zsh
+    cp -r oh-my-zsh_root/* ${ROOT_HOME}/.oh-my-zsh/
+  fi
+  
   # .config
   if [ -d "${USER_HOME}/.config" ]; then
     rm -rf ${USER_HOME}/.config/*
@@ -139,6 +158,14 @@ copy_config_files() {
 
 }
 
+picom_install() {
+  sudo apt install cmake 
+  git clone https://github.com/yshui/picom.git && cd picom 
+  meson setup --buildtype=release build
+  ninja -C build
+  ninja -C build install
+}
+
 # Función para crear enlaces simbólicos
 create_symlink() {
   ln -s -f ${USER_HOME}.zshrc ${ROOT_HOME}/.zshrc
@@ -148,6 +175,7 @@ create_symlink() {
 install_packages
 install_oh_my_zsh
 copy_config_files
+picom_install 
 create_symlinks
 
 echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
