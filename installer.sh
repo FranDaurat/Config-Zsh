@@ -127,6 +127,24 @@ copy_config_files() {
     sudo cp -r config_Bspwm/config_root/* ${ROOT_HOME}/.config/
   fi
 
+  # Plugins 
+
+  if [ -d "/usr/share/zsh-sudo " ]; then
+    sudo cp sudo.plugin.zsh /usr/share/zsh-sudo/
+  else
+    sudo mkdir /usr/share/zsh-sudo
+    sudo cp sudo.plugin.zsh /usr/share/zsh-sudo/
+  fi
+
+   if [ -d "/usr/share/zsh-autocomplete " ]; then
+    sudo cp zsh-autocomplete.plugin.zsh /usr/share/zsh-autocomplete/
+  else
+    sudo mkdir /usr/share/zsh-autocomplete
+    sudo cp zsh-autocomplete.plugin.zsh /usr/share/zsh-autocomplete/
+  fi
+
+
+
   # Fonts
   if [ -d "/usr/local/share/fonts" ]; then
     rm -rf /usr/local/share/fonts/*
@@ -135,6 +153,16 @@ copy_config_files() {
     sudo mkdir /usr/local/share/fonts 
     cp -r fonts/* /usr/local/share/fonts/ 
   fi
+
+  if [ -d "/usr/share/fonts/truetype" ]; then
+    sudo cp -r config_Bspwm/config_user/polybar/fonts/* /usr/share/fonts/truetype/
+    sudo fc-cache -v
+  else
+    sudo mkdir /usr/share/fonts/truetype
+    sudo cp -r config_Bspwm/config_user/polybar/fonts/* /usr/share/fonts/truetype/
+    sudo fc-cache -fv
+  fi
+
 
   # Wallpaper
   if [ -d "${USER_HOME}/Wallpapers" ]; then
@@ -167,7 +195,7 @@ rofi_install(){
 
 # Función para crear enlaces simbólicos
 create_symlink() {
-  ln -s -f ${USER_HOME}.zshrc ${ROOT_HOME}/.zshrc
+  sudo ln -s -f ${USER_HOME}.zshrc ${ROOT_HOME}/.zshrc
 }
 
 # Llamada a funciones

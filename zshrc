@@ -162,6 +162,13 @@ if [ -f /usr/share/zsh-sudo/sudo.plugin.zsh ]; then
 	source /usr/share/zsh-sudo/sudo.plugin.zsh
 fi
 
+# ZSH Auto-Complete Plugin
+if [ -f /usr/share/zsh-autocomplete/zsh-autocomplete-plugin.zsh ]; then
+	source /usr/share/zsh-autocomplete/zsh-autocomplete-plugin.zsh
+fi
+
+
+
 # History 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
