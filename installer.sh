@@ -29,7 +29,7 @@ ROOT_HOME="/root"
 install_packages() {
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
   sudo apt update -y
-  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom wmname feh
+  sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom wmname 
   sudo apt install -y build-essential vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
   sudo apt install -y libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
   sudo apt install -y libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev
@@ -130,7 +130,8 @@ copy_config_files() {
 
   # nvim 
   cp -r nvim /opt
-
+  # feh
+  sudo cp feh /usr/bin
   # Plugins 
 
   if [ -d "/usr/share/zsh-sudo " ]; then
@@ -167,11 +168,11 @@ copy_config_files() {
     sudo fc-cache -fv
   fi
 
-  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
-  ${USER_HOME}/.fzf/install
+  git clone -y --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
+  ${USER_HOME}/.fzf/install --all
 
-  sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
-  sudo ${ROOT_HOME}/.fzf/install
+  sudo git clone -y --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
+  sudo ${ROOT_HOME}/.fzf/install --all
 
 
   # Wallpaper
