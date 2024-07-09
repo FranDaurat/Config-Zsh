@@ -127,6 +127,9 @@ copy_config_files() {
     sudo cp -r config_Bspwm/config_root/* ${ROOT_HOME}/.config/
   fi
 
+  # nvim 
+  cp -r nvim /opt
+
   # Plugins 
 
   if [ -d "/usr/share/zsh-sudo " ]; then
