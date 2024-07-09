@@ -28,6 +28,7 @@ ROOT_HOME="/root"
 # Función para instalar paquetes
 install_packages() {
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
+  export DEBIAN_FRONTEND=noninteractive
   sudo apt update -y
   sudo apt install -y git curl kitty bat xclip httpx-toolkit subfinder moreutils lsd bspwm sxhkd zsh polybar picom wmname 
   sudo apt install -y build-essential vim libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
@@ -65,12 +66,12 @@ copy_config_files() {
     cp zshrc ${USER_HOME}/.zshrc
   fi
   ## Root
-  if [ -f "${ROOT_HOME}/.zshrc" ]; then
-    rm -rf ${ROOT_HOME}/.zshrc
-    sudo cp zshrc ${ROOT_HOME}/.zshrc
-  else
-    sudo cp zshrc ${ROOT_HOME}/.zshrc
-  fi
+  #if [ -f "${ROOT_HOME}/.zshrc" ]; then
+  #  rm -rf ${ROOT_HOME}/.zshrc
+  #  sudo cp zshrc ${ROOT_HOME}/.zshrc
+  #else
+  #  sudo cp zshrc ${ROOT_HOME}/.zshrc
+  #fi
 
   # .p10k.zsh
 
@@ -168,10 +169,10 @@ copy_config_files() {
     sudo fc-cache -fv
   fi
 
-  git clone -y --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
+  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
   ${USER_HOME}/.fzf/install --all
 
-  sudo git clone -y --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
+  sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
   sudo ${ROOT_HOME}/.fzf/install --all
 
 
@@ -186,7 +187,7 @@ copy_config_files() {
 }
 
 picom_install() {
-  sudo apt install cmake 
+  sudo apt install -y  cmake 
   git clone https://github.com/yshui/picom.git && cd picom 
   meson setup --buildtype=release build
   ninja -C build
@@ -195,12 +196,20 @@ picom_install() {
 
 rofi_install(){
   sudo cp rofi /usr/bin/rofi
-  if [ ! -d "/usr/local/rofi" ];then
+  if [ ! -d "/usr/local/rofi" ]; then
     mkdir /usr/local/rofi
     mkdir /usr/local/rofi/themes
     sudo cp -r rofi_themes/* /usr/local/rofi/themes/
   else
     sudo cp -r rofi_themes/* /usr/local/rofi/themes/
+  fi
+
+  if [ ! -d "/usr/share/rofi" ]; then
+    mkdir /usr/share/rofi
+    mkdir /usr/share/rofi/themes
+    sudo cp -r rofi_themes/* /usr/share/rofi/themes/
+  else
+    sudo cp -r rofi_themes/* /usr/share/rofi/themes/
   fi
 }
 
