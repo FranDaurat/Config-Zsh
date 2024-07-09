@@ -169,11 +169,6 @@ copy_config_files() {
     sudo fc-cache -fv
   fi
 
-  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
-  ${USER_HOME}/.fzf/install --all
-
-  sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
-  sudo ${ROOT_HOME}/.fzf/install --all
 
 
   # Wallpaper
@@ -184,6 +179,14 @@ copy_config_files() {
     cp fondo.jpg ${USER_HOME}/Wallpapers/pexels-rpnickson-2478248.jpg
   fi
 
+}
+
+fzf_install(){
+  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
+  ${USER_HOME}/.fzf/install --all
+
+  sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
+  sudo ${ROOT_HOME}/.fzf/install --all
 }
 
 picom_install() {
@@ -197,34 +200,29 @@ picom_install() {
 rofi_install(){
   sudo cp rofi /usr/bin/rofi
   if [ ! -d "/usr/local/rofi" ]; then
-    mkdir /usr/local/rofi
-    mkdir /usr/local/rofi/themes
+    sudo mkdir -p /usr/local/rofi/themes
     sudo cp -r rofi_themes/* /usr/local/rofi/themes/
   else
     sudo cp -r rofi_themes/* /usr/local/rofi/themes/
   fi
 
   if [ ! -d "/usr/share/rofi" ]; then
-    mkdir /usr/share/rofi
-    mkdir /usr/share/rofi/themes
+    sudo mkdir -p /usr/share/rofi/themes
     sudo cp -r rofi_themes/* /usr/share/rofi/themes/
   else
     sudo cp -r rofi_themes/* /usr/share/rofi/themes/
   fi
 }
 
-# Función para crear enlaces simbólicos
-create_symlink() {
-  sudo ln -s -f ${USER_HOME}.zshrc ${ROOT_HOME}/.zshrc
-}
 
 # Llamada a funciones
 install_packages
 install_oh_my_zsh
 copy_config_files
 picom_install 
+fzf_install
+wait
 rofi_install
-create_symlink
 
 echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
 tput cnorm
