@@ -163,6 +163,12 @@ copy_config_files() {
     sudo fc-cache -fv
   fi
 
+  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf
+  ${USER_HOME}/.fzf/install
+
+  sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf
+  sudo ${ROOT_HOME}/.fzf/install
+
 
   # Wallpaper
   if [ -d "${USER_HOME}/Wallpapers" ]; then
