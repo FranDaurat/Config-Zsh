@@ -27,6 +27,8 @@ ROOT_HOME="/root"
 
 # Función para instalar paquetes
 install_packages() {
+  echo -e "${yellowColour}[!] Comenzando instalación, sé paciente ${endColour}"
+  sleep 2
   echo -e "${blueColour}[*] Actualizando e instalando paquetes...${endColour}"
   export DEBIAN_FRONTEND=noninteractive
   sudo apt update -y &>/dev/null
