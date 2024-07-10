@@ -20,7 +20,7 @@ bspc rule -a burpsuite state=floating center=on
 
 
 vmware-user-suid-wrapper &
-/usr/bin/feh --bg-fill /home/elgordoponcio/Wallpapers/pexels-rpnickson-2478248.jpg &
+/usr/bin/xwallpaper --zoom /home/elgordoponcio/Wallpapers/pexels-rpnickson-2478248.jpg &
 
 
 bspc config border_width 1
