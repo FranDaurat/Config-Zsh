@@ -192,12 +192,17 @@ fonts_install() {
 fzf_install() {
   echo -e "${blueColour}[*] Instalando fzf...${endColour}"
 
-  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf &>/dev/null
-  ${USER_HOME}/.fzf/install --all &>/dev/null
+  git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf  &>/dev/null
+  if [ -f "${USER_HOME}/.fzf/install" ]; then
+    ${USER_HOME}/.fzf/./install  &>/dev/null
+  fi
 
   sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf &>/dev/null
-  sudo ${ROOT_HOME}/.fzf/install --all &>/dev/null
+  if [ -f "${ROOT_HOME}/.fzf/install" ]; then
+    ${ROOT_HOME}/.fzf/./install  &>/dev/null
+  fi
 }
+
 
 picom_install() {
   echo -e "${blueColour}[*] Instalando picom...${endColour}"
@@ -206,6 +211,19 @@ picom_install() {
   meson setup --buildtype=release build &>/dev/null
   ninja -C build &>/dev/null
   ninja -C build install &>/dev/null
+  cd .. &>/dev/null
+  rm -rf picom &>/dev/null
+}
+
+rofi_install(){
+
+if [ -f "./rofi_install" ]; then
+  chmod +x ./rofi_install
+  ./rofi_install
+else
+  echo -e "${redColour}[!] El archivo rofi_install no se encontró. Omita esta parte de la instalación.${endColour}"
+fi
+
 }
 
 # Llamada a funciones
@@ -218,7 +236,7 @@ zsh-p10k_install
 fonts_install
 fzf_install
 picom_install
-./rofi_install
+rofi_install
 wait
 
 echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
