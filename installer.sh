@@ -193,9 +193,11 @@ fzf_install() {
   echo -e "${blueColour}[*] Instalando fzf...${endColour}"
 
   git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf  &>/dev/null
+  ${USER_HOME}/.fzf/install --all &>/dev/null 
   cp fzf.zsh ${USER_HOME}/.fzf.zsh &>/dev/null
 
   sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf &>/dev/null
+  sudo ${ROOT_HOME}/.fzf/install --all &>/dev/null
   sudo cp fzf.zsh ${ROOT_HOME}/.fzf.zsh &>/dev/null
 }
 
@@ -203,13 +205,18 @@ fzf_install() {
 picom_install() {
   echo -e "${blueColour}[*] Instalando picom...${endColour}"
   sudo apt install -y cmake &>/dev/null
-  git clone https://github.com/yshui/picom.git && cd picom &>/dev/null
-  meson setup --buildtype=release build &>/dev/null
-  ninja -C build &>/dev/null
-  ninja -C build install &>/dev/null
-  cd .. &>/dev/null
-  rm -rf picom &>/dev/null
+
+  (
+    git clone https://github.com/yshui/picom.git &>/dev/null
+    cd picom
+    meson setup --buildtype=release build &>/dev/null
+    ninja -C build &>/dev/null
+    sudo ninja -C build install &>/dev/null
+    cd ..
+    rm -rf picom &>/dev/null
+  ) &>/dev/null
 }
+
 
 rofi_install(){
 
@@ -235,5 +242,5 @@ picom_install
 rofi_install
 wait
 
-echo -e "\n\n${greenColour}[*] Instalación terminada, sólo falta instalar BurpsuitePro y reiniciar...${endColour}\n"
+echo -e "\n\n${greenColour}[*] ¡Instalación terminada!${endColour}\n"
 tput cnorm
