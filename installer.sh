@@ -149,7 +149,7 @@ zsh-p10k_install() {
 
   wait
   if [ -f "${ROOT_HOME}/.zshrc" ]; then
-    ln -s -f ${USER_HOME}/.zshrc ${ROOT_HOME}.zshrc &>/dev/null
+    ln -s -f ${USER_HOME}/.zshrc ${ROOT_HOME}/.zshrc &>/dev/null
   fi
   # .p10k.zsh
   if [ -f "${USER_HOME}/.p10k.zsh" ]; then
@@ -242,5 +242,5 @@ picom_install
 rofi_install
 wait
 
-echo -e "\n\n${greenColour}[*] ¡Instalación terminada!${endColour}\n"
+echo -e "\n\n${greenColour}[+] ¡Instalación terminada!${endColour}\n"
 tput cnorm
