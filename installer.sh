@@ -193,10 +193,10 @@ fzf_install() {
   echo -e "${blueColour}[*] Instalando fzf...${endColour}"
 
   git clone --depth 1 https://github.com/junegunn/fzf.git ${USER_HOME}/.fzf  &>/dev/null
-  cp .fzf.zsh ${USER_HOME}/.fzf.zsh
+  cp fzf.zsh ${USER_HOME}/.fzf.zsh &>/dev/null
 
   sudo git clone --depth 1 https://github.com/junegunn/fzf.git ${ROOT_HOME}/.fzf &>/dev/null
-  sudo cp .fzf.zsh ${ROOT_HOME}/.fzf.zsh
+  sudo cp fzf.zsh ${ROOT_HOME}/.fzf.zsh &>/dev/null
 }
 
 
