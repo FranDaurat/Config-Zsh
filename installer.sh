@@ -220,6 +220,7 @@ picom_install() {
 }
 
 grub_install(){
+  echo -e "${blueColour}[*] Cambiando tema del grub...${endColour}"
   sudo cp -r grub/background.png /boot/grub/themes/kali &>/dev/null
   sudo cp -r grub/_background.png /boot/grub/ &>/dev/null
   sudo cp -r grub/grub-4x3.png /boot/grub/themes/kali &>/dev/null
